@@ -97,6 +97,7 @@ assert zvire.export_to_dict() == {'jmeno': 'Láďa', 'druh': 'Koala', 'vaha': 15
 
 # Zamestnanec class
 zamestnanec = Zamestnanec('Petr Novak', 50000, 'Programator')
+zamestnanec_2 = Zamestnanec('petr Novak', 50000, 'Programator')
 assert hasattr(zamestnanec, 'cele_jmeno')
 assert hasattr(zamestnanec, 'rocni_plat')
 assert hasattr(zamestnanec, 'pozice')
@@ -104,6 +105,7 @@ assert isinstance(zamestnanec.cele_jmeno, str)
 assert isinstance(zamestnanec.rocni_plat, int)
 assert isinstance(zamestnanec.pozice, str)
 assert zamestnanec.ziskej_inicialy() == 'P.N.'
+assert zamestnanec_2.ziskej_inicialy() == 'P.N.'
 
 # Reditel class
 zvire = Zvire('Lev', 'Lvice', 150)
