@@ -28,7 +28,7 @@ class Zamestnanec:
     
     def ziskej_inicialy(self) -> str:
         jmeno_prijmeni = self.cele_jmeno.split(" ")
-        return f"{jmeno_prijmeni[0][0]}.{jmeno_prijmeni[1][0]}."
+        return f"{jmeno_prijmeni[0][0].upper()}.{jmeno_prijmeni[1][0].upper()}."
 
 class Reditel(Zamestnanec):
     def __init__(self, cele_jmeno: str, rocni_plat: int, oblibene_zvire: Zvire):
